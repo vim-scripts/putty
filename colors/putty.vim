@@ -1,13 +1,10 @@
 " Vim color file
-" Maintainer:	Michael Piefel <piefel@informatik.hu-berlin.de>
-" Last Change:	2001 Aug 16
-" Licence:	Public Domain
+" Maintainer:	Prachya Boonkwan <kaamanita@hotmail.com>
+" Last Change:	April 29, 2003
+" Licence:	    Public Domain
 
-" This color scheme uses a White background. It's based on Bram's
-" morning theme, but doesn't try to work for non-GUI editing.
-" 
-" It's supposed to look like the Emacs standard colors, at least
-" for C. But Emacs has different categories, so it's not very good.
+" This package offers a eye-catching color scheme that resembles the
+" default color scheme of Putty telnet terminal.
 
 " First remove all existing highlighting.
 set background=dark
@@ -18,10 +15,8 @@ endif
 
 let colors_name = "putty"
 
-" hi Normal guifg=Black guibg=White
 hi Normal guifg=Grey guibg=Black
 
-" Groups used in the 'highlight' and 'guicursor' options default value.
 hi ErrorMsg guibg=Red guifg=White
 hi IncSearch gui=reverse
 hi ModeMsg gui=bold
@@ -49,17 +44,14 @@ hi DiffAdd guibg=LightBlue
 hi DiffChange guibg=LightMagenta
 hi DiffDelete gui=bold guifg=Blue guibg=LightCyan
 
-" Colors for syntax highlighting
 hi Comment guifg=Blue guibg=Black
 hi Constant guifg=#BB0000 guibg=Black
 hi PreProc guifg=#BB00BB guibg=Black
 hi Statement gui=NONE guifg=#BBBB00 guibg=Black
-hi Special guifg=SlateBlue guibg=Black
-hi Ignore guifg=Black
+hi Special guifg=#BB00BB guibg=Black
+hi Ignore guifg=Grey
 hi Identifier guifg=#00BBBB guibg=Black
 hi Type guifg=#00BB00 guibg=Black
-
-" Some specials (override hilinks)
 
 hi link IncSearch		Visual
 hi link String			Constant
